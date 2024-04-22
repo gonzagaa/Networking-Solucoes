@@ -1,0 +1,262 @@
+
+
+/* HOME =================== */
+#home {
+    overflow: hidden;
+    min-height: 100vh;
+
+
+    position: relative;
+    background: var(--bg-color);
+}
+
+#home img.eclipse {
+    position: absolute;
+    width: 40rem;
+    top: -20rem;
+    right: -15rem;
+    opacity: .5;
+    animation: eclipse 7s linear infinite;
+}
+
+@keyframes eclipse {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes graphic {
+    50% {
+        transform: translateY(7px);
+    }
+}
+
+#home .content {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    gap: 5rem;
+}
+
+#home .content .topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+#home .content .text > span {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 1rem;
+    width: max-content;
+}
+
+#home .content h1 {
+    color: var(--color-black);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--Gilroy);
+}
+
+#home .content h1 span {
+    color: var(--primary-color);
+    font-family: var(--GilroyBold);
+}
+
+#home .content p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#home .content a {
+    text-decoration: none;
+}
+
+#home .content a button {
+    padding: 1rem 3rem;
+    border: none;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    background: var(--primary-color);
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+#home .image {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+#home .image img {
+    border-radius: 1rem;
+    box-shadow:  12px 12px 40px #d1d1d5e4,
+             -12px -12px 40px #ffffff;
+}
+
+#home .image img.graphic {
+    position: absolute;
+    width: 25%;
+
+    animation: graphic 5s ease-in-out infinite;
+}
+
+#home .image img.graphic.um {
+    position: inherit;
+    width: 50%;
+
+    animation: none;
+}
+
+#home .image img.graphic.dois {
+    bottom: -3rem;
+    left: 2rem;
+
+    animation-delay: 100ms;
+}
+
+#home .image img.graphic.tres {
+    bottom: -3rem;
+    right: 3rem;
+
+    animation-delay: 200ms;
+}
+
+#home .image img.graphic.quatro {
+    left: 1rem;
+
+    box-shadow:  3px 3px 10px #d1d1d5,
+             -3px -3px 10px #ffffff;
+
+    animation-delay: 400ms;
+}
+
+#home .image img.graphic.cinco {
+    right: 2rem;
+
+    box-shadow:  3px 3px 10px #d1d1d5,
+             -3px -3px 10px #ffffff;
+
+    animation-delay: 800ms;
+}
+
+
+@media (min-width: 1080px) {  
+    header#home {
+        height: 100vh;
+        padding-block: initial;
+    }
+
+    header#home img.eclipse {
+        width: 100rem;
+        top: initial;
+        bottom: -40rem;
+        right: -40rem;
+    }
+ 
+    header#home .content {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    header#home .content .text > span {
+        font-size: 1.8rem;
+    }
+
+    header#home .content .text h1 {
+        font-size: 6rem;
+    }
+
+    header#home .content .text p {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    header#home .image img.graphic {
+        width: 35%;
+    }
+
+    header#home .content .text a button {
+        font-size: 2rem;
+    }
+
+    header#home .image img.graphic.um {
+        width: 60%;
+        opacity: .4;
+        filter: blur(1px);
+    }
+    
+    header#home .image img.graphic.dois {
+        bottom: -8rem;
+        left: 3%;
+    }
+
+    header#home .image img.graphic.tres {
+        top: -13rem;
+        right: 6%;
+    }
+
+    header#home .image img.graphic.quatro,
+    header#home .image img.graphic.cinco {
+        width: 20%;
+    }
+
+    header#home .image img.graphic.quatro {
+        top: -3rem;
+        filter: blur(1px);
+    }
+
+    header#home .image img.graphic.cinco {
+        bottom: -3rem;
+        filter: blur(1px);
+    }
+}
+   
+
+@media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(180rem, 100%);
+    }
+  }
