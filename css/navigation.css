@@ -84,7 +84,7 @@ nav .wrapper {
 }
 
 nav button path {
-  stroke: var(--color-white);
+  stroke: var(--primary-color);
 }
 
 nav path {
@@ -92,8 +92,12 @@ nav path {
 }
 
 .logo img {
-  width: 5rem;
+  width: 10rem;
   margin-left: -1rem;
+}
+
+nav#navigation.scroll .logo img {
+  filter: brightness(0) invert(100%);
 }
 
 nav button {
@@ -112,8 +116,8 @@ nav.scroll {
   background: var(--primary-color);
 }
 
-nav.scroll path {
-  stroke: var(--primary-color);
+nav#navigation.scroll path {
+  stroke: var(--color-white);
 }
 
 /* MENU EXPANDED =================== */
@@ -208,6 +212,7 @@ body.menu-expanded .menu {
 body.menu-expanded .menu img.logo {
   width: 15rem;
   opacity: .5;
+
 }
 
 .menu .button {
@@ -241,7 +246,7 @@ body.menu-expanded nav button {
 }
 
 body.menu-expanded button path {
-  stroke: var(--color-text);
+  stroke: var(--primary-color);
 }
 
 /* RESPONSIVE =================== */

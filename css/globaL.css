@@ -12,6 +12,8 @@
 
     --primary-color: #393ed0;
 
+    --gradient: linear-gradient(to right, #393ed0, #2025be);
+
     --color-black: #050614;
     --color-white: #F6F6FB;
 

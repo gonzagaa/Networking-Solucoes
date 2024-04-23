@@ -1,0 +1,193 @@
+#sobre {
+    background: var(--bg-color);
+    position: relative;
+}
+
+#sobre img.logo {
+    display: none;
+}
+
+#sobre header {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+#sobre header span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+#sobre header h2 {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+#sobre .image {
+    position: relative;
+}
+
+#sobre img.principal {
+    width: 100%;
+    border-radius: 2rem .5rem 2rem .5rem;
+
+    box-shadow:  15px 15px 30px #d5d5d5,
+             -15px -15px 30px #ffffff;
+}
+
+#sobre img.graphic {
+    position: absolute;
+    width: 40%;
+    border-radius: 1.5rem;
+
+    box-shadow:  15px 15px 30px #8080801d,
+             -15px -15px 30px rgba(122, 122, 122, 0.123);
+
+    animation: graphic 3s ease-in-out infinite;
+}
+
+#sobre img.graphic.um {
+    bottom: -1rem;
+    left: 0;
+
+    animation-delay: 100ms;
+}
+
+#sobre img.graphic.dois {
+    top: -1rem;
+    right: 0;
+
+    animation-delay: 300ms;
+}
+
+#sobre .text {
+    margin-top: 5rem;
+    text-align: left;
+}
+
+#sobre .text .topics {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#sobre .text .topics span {
+    font-size: 1.2rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+}
+
+#sobre .text p {
+    color: var(--color-black);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+#sobre .text p span {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#sobre .text a {
+    text-decoration: none;
+}
+
+#sobre .text a button {
+    margin-top: 3rem;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    background: var(--gradient);
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#sobre img.logo {
+        display: initial;
+        position: absolute;
+        opacity: .2;
+        filter: blur(3px);
+        width: 40rem;
+        top: 23rem;
+        left: 3%;
+    }
+
+    section#sobre header {
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    section#sobre header span {
+        font-size: 1.8rem;
+    }
+
+    section#sobre header h2 {
+        font-size: 3.5rem;
+    }
+
+    section#sobre .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 10rem;
+    }
+
+    section#sobre .content .image img.graphic {
+        width: 30%;
+    }
+
+    section#sobre .content .text {
+        margin-top: initial;
+    }
+
+    section#sobre .content .text .topics span {
+        font-size: 1.4rem;
+    }
+
+    section#sobre .content .text p {
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+
+    section#sobre .text a button {
+        font-size: 1.8rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(180rem, 100%);
+    }
+  }
