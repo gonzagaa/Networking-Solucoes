@@ -1,0 +1,170 @@
+#services {
+    background: var(--bg-color);
+    position: relative;
+}
+
+#services img.logo {
+    display: none;
+}
+
+#services header {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+#services header span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+#services header h2 {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+#services .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#services .cards .card {
+    padding: 2rem;
+    border-radius: 2rem;
+    background: #eeeeee;
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    box-shadow:  20px 20px 39px #d5d5d5c5,
+             -20px -20px 39px #ffffff90;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15rem;
+}
+
+#services .cards .card img {
+    width: 18rem;
+}
+
+#services .cards .card h3 {
+    font-size: 2.5rem;
+    color: var(--color-black);
+}
+
+#services .cards .card p {
+    margin-top: 1.4rem;
+    font-size: 1.6rem;
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+#services .cards .card a {
+    text-decoration: none;
+}
+
+#services .cards .card a button {
+    margin-top: 3rem;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    background: var(--gradient);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#services .cards .card a button:hover {
+    cursor: pointer;
+    box-shadow:  13px 13px 26px #cacaca,
+             -13px -13px 26px #ffffff;
+}
+
+#services .cards .card a button ion-icon {
+    color: var(--color-white);
+    font-size: 1.8rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#services .cards .card a button:hover ion-icon {
+    transform: translateX(4px);
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#services header {
+        text-align: center;
+        margin-bottom: 8rem;
+
+        position: initial;
+    }
+
+    section#services header span {
+        font-size: 1.8rem;
+    }
+
+    section#services header h2 {
+        font-size: 3.5rem;
+    }
+
+    section#services .wrapper .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#services .wrapper .cards .card {
+        justify-content: space-between;
+        padding: 3rem;
+
+        position: initial;
+
+        box-shadow:  20px 20px 39px #d5d5d5cd,
+             -20px -20px 39px #ffffff;
+    }
+
+    section#services a button {
+        font-size: 1.8rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(180rem, 100%);
+    }
+  }

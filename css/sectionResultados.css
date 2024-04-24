@@ -1,0 +1,129 @@
+#resultados {
+    background:#eeeeee;
+    position: relative;
+
+   
+}
+
+#resultados header {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+#resultados header h2 {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+#resultados header h2 span {
+    color: var(--primary-color);
+}
+
+#resultados header p {
+    margin-top: 1.4rem;
+    font-size: 1.6rem;
+    color: var(--color-black);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+#resultados header p span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#resultados .topics {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: left;
+}
+
+#resultados .topics .topic h3 {
+    font-size: 5rem;
+}
+
+#resultados .topics .topic h3 span {
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+#resultados .topics .topic p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: var(--color-black);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#resultados header {
+        margin-bottom: 0;
+        position: initial;
+    }
+
+    section#resultados header h2 {
+        font-size: 4.5rem;
+    }
+
+    section#resultados header p {
+        font-size: 1.6rem;
+    }
+
+    section#resultados .content {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    section#resultados .content .topics {
+        flex-direction: row;
+    }
+
+    section#resultados .content .topics .topic {
+        text-align: center;
+    }
+
+    section#resultados .content .topics .topic h3 {
+        font-size: 7rem;
+    }
+
+    section#resultados .content .topics .topic p {
+        font-size: 1.4rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(180rem, 100%);
+    }
+  }

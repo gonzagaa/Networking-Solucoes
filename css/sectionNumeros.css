@@ -6,7 +6,7 @@
 
 #numeros .wrapper {
     margin-top: 2rem;
-    background: var(--primary-color);
+    background: var(--gradient-bottom);
     padding-block: 4rem;
     border-radius: 3rem;
 
@@ -86,7 +86,7 @@
     }
 
     section#numeros .wrapper {
-        background: var(--primary-color);
+        background: var(--gradient-bottom);
         padding: 5rem;
         border-radius: 3rem;
     }

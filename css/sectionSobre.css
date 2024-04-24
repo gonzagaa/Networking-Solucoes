@@ -83,13 +83,13 @@
 
 #sobre .text p {
     color: var(--color-black);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.6;
 }
 
 #sobre .text p span {
-    font-weight: 700;
+    font-weight: 500;
     color: var(--primary-color);
 }
 
@@ -105,6 +105,29 @@
     font-size: 1.6rem;
     color: var(--color-white);
     background: var(--gradient);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#sobre .text a button:hover {
+    cursor: pointer;
+    box-shadow:  13px 13px 26px #cacaca,
+             -13px -13px 26px #ffffff;
+}
+
+#sobre .text a button ion-icon {
+    color: var(--color-white);
+    font-size: 1.8rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#sobre .text a button:hover ion-icon {
+    transform: translateX(4px);
 }
 
 @media (min-width: 1080px) {
@@ -115,7 +138,7 @@
     section#sobre img.logo {
         display: initial;
         position: absolute;
-        opacity: .2;
+        opacity: .1;
         filter: blur(3px);
         width: 40rem;
         top: 23rem;
