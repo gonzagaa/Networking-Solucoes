@@ -3,6 +3,10 @@
     position: relative;
 }
 
+#services ion-icon.arrow {
+  display: none;
+}
+
 #services img.logo {
     display: none;
 }
@@ -39,12 +43,13 @@
     flex-direction: column;
     align-items: start;
 
-    box-shadow:  20px 20px 39px #d5d5d5c5,
-             -20px -20px 39px #ffffff90;
+    box-shadow:  20px 20px 39px #d5d5d59f,
+            -15px -15px 50px #e0e0e0a6;
 
     position: -webkit-sticky;
     position: sticky;
     top: 15rem;
+    border: 2px solid #dbdbdb;
 }
 
 #services .cards .card img {
@@ -107,9 +112,8 @@
     }
 
     section#services header {
-        text-align: center;
         margin-bottom: 8rem;
-
+        width: 40%;
         position: initial;
     }
 
@@ -124,6 +128,27 @@
     section#services .wrapper .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+
+        position: relative;
+    }
+
+    section#services .wrapper .cards::before {
+      content: '';
+      position: absolute;
+      width: 88%;
+      height: 2px;
+      top: -5rem;
+      left: 0;
+      background: var(--gradient);
+    }
+
+    section#services ion-icon.arrow {
+      position: absolute;
+      display: inherit;
+      top: -6.2rem;
+      right: 11%;
+      font-size: 4rem;
+      color: var(--primary-color);
     }
 
     section#services .wrapper .cards .card {
@@ -134,6 +159,7 @@
 
         box-shadow:  20px 20px 39px #d5d5d5cd,
              -20px -20px 39px #ffffff;
+        border: none;
     }
 
     section#services a button {
