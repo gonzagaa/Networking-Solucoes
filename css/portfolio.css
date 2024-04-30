@@ -1,0 +1,32 @@
+#portfolio {
+    overflow: hidden;
+    background: var(--bg-color);
+}
+
+#portfolio header {
+    margin-top: 3rem;
+    
+    background: var(--gradient-bottom);
+
+    padding: 3rem;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#portfolio header span {
+    font-weight: 200;
+    color: var(--color-white);
+    opacity: .8;
+}
+
+#portfolio header h1 {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+}

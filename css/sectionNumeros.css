@@ -92,8 +92,12 @@
     }
 
     section#numeros .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
         gap: 30rem;
-        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        padding-inline: 10rem;
     }
 
     section#numeros .cards .card span {
@@ -101,7 +105,7 @@
     }
 
     section#numeros .cards .card h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     section#numeros .cards .card::before {
