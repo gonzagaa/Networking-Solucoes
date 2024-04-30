@@ -3,10 +3,6 @@
     position: relative;
 }
 
-#sobre img.logo {
-    display: none;
-}
-
 #sobre header {
     text-align: left;
     margin-bottom: 4rem;
@@ -133,16 +129,6 @@
 @media (min-width: 1080px) {
     .wrapper {
       width: min(112rem, 100%);
-    }
-
-    section#sobre img.logo {
-        display: initial;
-        position: absolute;
-        opacity: .1;
-        filter: blur(3px);
-        width: 40rem;
-        top: 23rem;
-        left: 3%;
     }
 
     section#sobre header {

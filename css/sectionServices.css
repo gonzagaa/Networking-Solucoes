@@ -3,13 +3,9 @@
     position: relative;
 }
 
-#services img.logo {
-    display: none;
-}
-
 #services header {
     text-align: left;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
 }
 
 #services header span {
@@ -24,82 +20,58 @@
 }
 
 #services .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #services .cards .card {
-    padding: 2rem;
-    border-radius: 2rem;
-    background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
 
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+  position: relative;
+  background: var(--bg-color);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15rem;
 
-    box-shadow:  20px 20px 39px #d5d5d59f,
-            -15px -15px 50px #e0e0e0a6;
-
-    position: -webkit-sticky;
-    position: sticky;
-    top: 15rem;
-    border: 2px solid #dbdbdb;
+  border-top: 1px solid #00000080;
+  padding-block: 6rem;
+  min-height: 30rem;
 }
 
-#services .cards .card img {
-    width: 18rem;
+#services .cards .card span {
+  color: var(--primary-color);
+  font-size: 3rem;
+  opacity: .4;
+  font-weight: 400;
 }
 
 #services .cards .card h3 {
-    font-size: 2.5rem;
-    color: var(--color-black);
+  font-size: 3rem;
+  color: var(--color-black);
 }
 
 #services .cards .card p {
-    margin-top: 1.4rem;
-    font-size: 1.6rem;
-    color: var(--color-black);
-    font-weight: 400;
-    line-height: 1.6;
+  color: var(--color-black);
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 #services .cards .card a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #services .cards .card a button {
-    margin-top: 3rem;
-    border: none;
-    padding: 1rem 3rem;
-    border-radius: 1rem;
-    font-size: 1.6rem;
-    color: var(--color-white);
-    background: var(--gradient);
-
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    transition: all 200ms ease-in-out;
-}
-
-#services .cards .card a button:hover {
-    cursor: pointer;
-    box-shadow:  13px 13px 26px #cacaca,
-             -13px -13px 26px #ffffff;
-}
-
-#services .cards .card a button ion-icon {
-    color: var(--color-white);
-    font-size: 1.8rem;
-
-    transition: all 200ms ease-in-out;
-}
-
-#services .cards .card a button:hover ion-icon {
-    transform: translateX(4px);
+  border: none;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: var(--color-white);
+  background: var(--gradient);
+  border-radius: 1rem;
 }
 
 @media (min-width: 1080px) {
@@ -108,9 +80,9 @@
     }
 
     section#services header {
-        margin-bottom: 8rem;
-        width: 40%;
+        margin-bottom: 10rem;
         position: initial;
+        text-align: center;
     }
 
     section#services header span {
@@ -121,37 +93,43 @@
         font-size: 3.5rem;
     }
 
-    section#services .wrapper .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 5rem;
-        position: relative;
+    section#services .cards .card {
+      width: 100%;
+      display: grid;
+      grid-template-columns: .1fr 2fr 3fr 2fr;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 7rem;
+      padding-block: 7rem;
+      min-height: initial;
     }
 
-    section#services .wrapper .cards::before {
-      content: '';
-      position: absolute;
-      width: 40%;
-      height: 2px;
-      top: -5rem;
-      left: 0;
-      background: var(--gradient);
+    section#services .cards .card:hover span,
+    section#services .cards .card:hover h3 {
+      transform: translateX(20px);
+      opacity: .5;
     }
 
-    section#services .wrapper .cards .card {
-        justify-content: space-between;
-        padding: 3rem;
 
-        position: initial;
-
-        box-shadow:  20px 20px 39px #d5d5d5cd,
-             -20px -20px 39px #ffffff;
-        border: none;
+    section#services .cards .card span {
+      font-size: 6rem;
+      opacity: .2;
+      transition: all 700ms ease-in-out;
     }
 
-    section#services a button {
-        font-size: 1.8rem;
+    section#services .cards .card h3 {
+      transition: all 700ms ease-in-out;
     }
+
+    section#services .cards .card a {
+      display: flex;
+      justify-content: end;
+    }
+
+    section#services .cards .card a button {
+      margin-top: 0;
+    }
+   
   }
 
   @media (min-width: 1200px) {
