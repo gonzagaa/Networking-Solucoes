@@ -45,7 +45,7 @@
 #services .cards .card span {
   color: var(--primary-color);
   font-size: 3rem;
-  opacity: .4;
+  opacity: .5;
   font-weight: 400;
 }
 
@@ -102,6 +102,10 @@
       gap: 7rem;
       padding-block: 7rem;
       min-height: initial;
+
+      position: initial;
+
+      overflow: hidden;
     }
 
     section#services .cards .card:hover span,
@@ -121,6 +125,28 @@
       transition: all 700ms ease-in-out;
     }
 
+    section#services .cards .card p {
+      position: relative;
+    }
+
+    section#services .cards .card p::before {
+      content: '';
+      position: absolute;
+      height: 20rem;
+      width: 3px;
+      background: var(--primary-color);
+      left: -2rem;
+      bottom: 100%;
+      border-radius: 2rem;
+      opacity: 0;
+      transition: all 700ms ease-in-out;
+    }
+
+    section#services .cards .card:hover p::before {
+      bottom: 50%;
+      opacity: 1;
+    }
+
     section#services .cards .card a {
       display: flex;
       justify-content: end;
@@ -128,6 +154,7 @@
 
     section#services .cards .card a button {
       margin-top: 0;
+      font-size: 1.8rem;
     }
    
   }

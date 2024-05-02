@@ -1,0 +1,181 @@
+#duvidas {
+    background:#dfdfdf;
+}
+
+#duvidas .text {
+    text-align: left;
+}
+
+#duvidas .text > span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+#duvidas .text h3 {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+#duvidas .text p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    opacity: .7;
+}
+
+#duvidas .text a {
+    text-decoration: none;
+}
+
+#duvidas .text a button {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background: var(--gradient);
+    border: none;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+#duvidas .image {
+    display: flex;
+    justify-content: center;
+
+    margin-block: 5rem;
+
+    position: relative;
+}
+
+#duvidas .image img.principal {
+    width: 100%;
+
+    border-radius: 2rem .5rem 2rem .5rem;
+
+    box-shadow:  15px 15px 30px #d5d5d5,
+             -15px -15px 30px #ffffff;
+}
+
+#duvidas img.graphic {
+    position: absolute;
+    width: 40%;
+    border-radius: 1.5rem;
+
+    box-shadow:  15px 15px 30px #8080801d,
+             -15px -15px 30px rgba(122, 122, 122, 0.123);
+
+    animation: graphic 3s ease-in-out infinite;
+}
+
+#duvidas img.graphic.um {
+    bottom: -1rem;
+    left: 0;
+
+    animation-delay: 100ms;
+}
+
+#duvidas img.graphic.dois {
+    top: -1rem;
+    right: 0;
+
+    animation-delay: 300ms;
+}
+
+#duvidas .numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    text-align: left;
+    gap: 2rem;
+}
+
+#duvidas .numbers h3 {
+    font-size: 4rem;
+    color: var(--color-black);
+}
+
+#duvidas .numbers h3 span {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+#duvidas .numbers p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    section#duvidas .text h3 {
+        font-size: 3.5rem;
+    }
+
+    section#duvidas .text p {
+        font-size: 1.8rem;
+    }
+
+    section#duvidas .text a button {
+        font-size: 1.8rem;
+    }
+
+    section#duvidas .content {
+        display: grid;
+        grid-template-columns: 1.6fr 1.3fr 1fr;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    section#duvidas .image {
+        margin-block: 0;
+    }
+
+    section#duvidas .image img.principal {
+        aspect-ratio: 9/11;
+        object-fit: cover;
+    }
+
+    section#duvidas .numbers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#duvidas .numbers h3 {
+        font-size: 5rem;
+    }
+
+    section#duvidas .numbers p {
+        font-size: 1.8rem;
+    }
+   
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(160rem, 100%);
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .wrapper {
+      width: min(180rem, 100%);
+    }
+  }

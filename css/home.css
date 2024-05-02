@@ -55,7 +55,7 @@
 }
 
 #home .content .text {
-    margin-top: var(--nav-height);
+    margin-top: 3rem;
 }
 
 #home .content .text > span {
