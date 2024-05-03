@@ -72,9 +72,10 @@
 
 #home .content h1 {
     color: var(--color-black);
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     font-family: var(--Gilroy);
+    line-height: 1.2;
 }
 
 #home .content h1 span {

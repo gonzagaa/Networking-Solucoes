@@ -39,7 +39,8 @@
 }
 
 #resultados .topics .topic h3 {
-    font-size: 5rem;
+    font-size: 4rem;
+    line-height: 1;
 }
 
 #resultados .topics .topic h3 span {

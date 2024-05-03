@@ -109,23 +109,36 @@
       width: min(112rem, 100%);
     }
 
+    section#duvidas {
+        background: var(--gradient-bottom);
+    }
+
+    section#duvidas .text > span {
+        color: #00ff00;
+    }
+
     section#duvidas .text h3 {
         font-size: 3.5rem;
+        color: var(--color-white);
     }
 
     section#duvidas .text p {
         font-size: 1.8rem;
+        color: var(--color-white);
+        font-weight: 300;
     }
 
     section#duvidas .text a button {
         font-size: 1.8rem;
+        color: var(--color-black);
+        background: linear-gradient(to right, #fff, #eaeaea);
     }
 
     section#duvidas .content {
         display: grid;
-        grid-template-columns: 1.6fr 1.3fr 1fr;
+        grid-template-columns: 1.6fr 1.7fr 1fr;
         align-items: center;
-        gap: 5rem;
+        gap: 7rem;
     }
 
     section#duvidas .image {
@@ -133,21 +146,44 @@
     }
 
     section#duvidas .image img.principal {
-        aspect-ratio: 9/11;
+        aspect-ratio: 14/9;
         object-fit: cover;
+
+        box-shadow:  20px 20px 60px #1b1fa2,
+             -20px -20px 60px #252bdb;
     }
 
     section#duvidas .numbers {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 7rem;
     }
 
     section#duvidas .numbers h3 {
         font-size: 5rem;
+        color: var(--color-white);
+
+        position: relative;
+    }
+
+    section#duvidas .numbers h3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        width: 3px;
+        height: 60%;
+        background: #00ff00;
+    }
+
+    section#duvidas .numbers h3 span {
+        color: #00ff00;
     }
 
     section#duvidas .numbers p {
         font-size: 1.8rem;
+        color: var(--color-white);
+        font-weight: 300;
     }
    
   }

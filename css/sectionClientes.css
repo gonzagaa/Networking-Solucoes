@@ -2,6 +2,7 @@
     background: var(--gradient-bottom);
     overflow: hidden;
     padding: 0;
+
   }
 
 #clientes .wrapper {
@@ -20,7 +21,6 @@
   
   #clientes .slide {
     overflow: hidden;
-    padding: 5rem 0;
     display: flex;
     white-space: nowrap;
   
@@ -48,7 +48,7 @@
   }
   
   #clientes .slide-text {
-    animation: slide 25s infinite linear;
+    animation: slide 65s infinite linear;
     display: flex;
   }
   
@@ -89,7 +89,6 @@
         padding-inline: 0;
         background: var(--gradient-bottom);
     }
-    
 
     section#clientes header span {
         font-size: 1.4rem;
@@ -105,6 +104,6 @@
     }
 
     section#clientes .slide-text img {
-        width: 15rem;
+        width: 18rem;
     }
 }
