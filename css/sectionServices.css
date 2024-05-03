@@ -5,7 +5,7 @@
 
 #services header {
     text-align: left;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
 }
 
 #services header span {
@@ -38,7 +38,7 @@
   top: 15rem;
 
   border-top: 1px solid #00000080;
-  padding-block: 6rem;
+  padding-block: 4rem;
   min-height: 30rem;
 }
 
@@ -47,7 +47,6 @@
   font-size: 7rem;
   opacity: .2;
   font-weight: 300;
-
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
 }
 
